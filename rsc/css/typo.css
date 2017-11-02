@@ -1,0 +1,194 @@
+:root{
+    --default-font: 'Roboto', sans-serif;
+    
+    /* Paragraf: */
+    --default-p-size: 1.4rem;
+    --default-p-weight: 400;
+    --default-p-line-height: 1.5em;
+}
+
+/* Nullstilling av standard innstillinger: */
+html, body{
+    font-size: 10px;
+    font-family: var(--default-font);
+}
+
+*{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+h1,h2,h3,h4,h5,h6,blockquote,p,a,table,th,td,tr,ul,ol,li,caption{
+    margin: 0;
+    padding: 0;
+}
+
+[data-color="white"]{color: white;}
+[data-color="ikea-blå"]{color: var(--ikea-blå);}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main p,
+main a,
+main ul,
+main li,
+main blockquote,
+main table,
+main th,
+main caption,
+main td,
+main tr{
+    color: inherit;
+}
+
+main h1 ~ h1{margin-top: 2rem;}
+main h2 ~ h2{margin-top: 2rem;}
+main h3 ~ h3{margin-top: 2rem;}
+main h4 ~ h4{margin-top: 2rem;}
+main h5 ~ h5{margin-top: 2rem;}
+main p ~ p{margin-top: 2rem;}
+main a ~ a{margin-top: 2rem;}
+main [data-content] img ~ img{margin-top: 2rem;}
+
+main h1 ~ h2{margin-top: 2rem;}
+main h1 ~ h3{margin-top: 2rem;}
+main h1 ~ h4{margin-top: 2rem;}
+main h1 ~ h5{margin-top: 2rem;}
+main h1 ~ p{margin-top: 2rem;}
+main h1 ~ a{margin-top: 2rem;}
+main h1 ~ ul{margin-top: 2rem;}
+main h1 ~ ol{margin-top: 2rem;}
+main h1 ~ blockquote{margin-top: 3rem;}
+main [data-content] h1 ~ img{margin-top: 2rem;}
+
+main h2 ~ h1{margin-top: 4rem;}
+main h2 ~ h3{margin-top: 2rem;}
+main h2 ~ h4{margin-top: 2rem;}
+main h2 ~ h5{margin-top: 2rem;}
+main h2 ~ p{margin-top: 2rem;}
+main h2 ~ a{margin-top: 2rem;}
+main h2 ~ ul{margin-top: 2rem;}
+main h2 ~ ol{margin-top: 2rem;}
+main [data-content] h2 ~ img{margin-top: 2rem;}
+
+main h3 ~ h1{margin-top: 4rem;}
+main h3 ~ h2{margin-top: 4rem;}
+main h3 ~ h4{margin-top: 2rem;}
+main h3 ~ h5{margin-top: 2rem;}
+main h3 ~ p{margin-top: 2rem;}
+main h3 ~ a{margin-top: 2rem;}
+main h3 ~ ul{margin-top: 2rem;}
+main h3 ~ ol{margin-top: 2rem;}
+main [data-content] h3 ~ img{margin-top: 2rem;}
+
+main h4 ~ h1{margin-top: 4rem;}
+main h4 ~ h2{margin-top: 4rem;}
+main h4 ~ h3{margin-top: 4rem;}
+main h4 ~ h5{margin-top: 2rem;}
+main h4 ~ p{margin-top: 2rem;}
+main h4 ~ a{margin-top: 2rem;}
+main h4 ~ ul{margin-top: 2rem;}
+main h4 ~ ol{margin-top: 2rem;}
+main [data-content] h4 ~ img{margin-top: 2rem;}
+
+main h5 ~ h1{margin-top: 4rem;}
+main h5 ~ h2{margin-top: 4rem;}
+main h5 ~ h3{margin-top: 4rem;}
+main h5 ~ h4{margin-top: 4rem;}
+main h5 ~ p{margin-top: 2rem;}
+main h5 ~ a{margin-top: 2rem;}
+main h5 ~ ul{margin-top: 2rem;}
+main h5 ~ ol{margin-top: 2rem;}
+main [data-content] h5 ~ img{margin-top: 2rem;}
+
+main p ~ h1{margin-top: 6rem;}
+main p ~ h2{margin-top: 6rem;}
+main p ~ h3{margin-top: 6rem;}
+main p ~ h4{margin-top: 4rem;}
+main p ~ h5{margin-top: 4rem;}
+main p ~ a{margin-top: 2rem;}
+main [data-content] p ~ img{margin-top: 2rem;}
+
+main a ~ h1{margin-top: 2rem;}
+main a ~ h2{margin-top: 2rem;}
+main a ~ h3{margin-top: 2rem;}
+main a ~ h4{margin-top: 2rem;}
+main a ~ h5{margin-top: 2rem;}
+main a ~ p{margin-top: 2rem;}
+main [data-content] a ~ img{margin-top: 2rem;}
+
+main h1{
+    /* Typo: */
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.3em;
+}
+
+main h2{
+    /* Typo: */
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+main h3{
+    /* Typo: */
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+main h4{
+    /* Typo: */
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+main p{
+    /* Typo: */
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+main ul{
+    margin-left: 2rem;
+}
+
+main li{
+    /* Visning: */
+    list-style-type: square;
+
+    /* Typo: */
+    font-size: var(--default-p-size);
+}
+
+main li:not(:last-child){
+    margin-bottom: 1em;
+}
+
+main table tr:first-child th{
+    /* Typo: */
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+main table tr:not(:first-child) th{
+    /* Typo: */
+    font-size: var(--default-p-size);
+    font-weight: 700;
+}
+
+main table tr:not(:first-child) td{
+    /* Typo: */
+    font-size: var(--default-p-size);
+    font-weight: var(--default-p-weight);
+}

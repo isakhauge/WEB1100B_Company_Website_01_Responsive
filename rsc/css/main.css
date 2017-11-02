@@ -1,0 +1,473 @@
+/* Variabler: */
+:root{
+    /* Globale innstillinger: */
+    --logo: url("../img/ikealogo.jpg");
+    --content-max-width: 900px;
+    --section-vc-margin: 8rem;
+    --content-hz-margin: 3rem;
+
+    /* Farger: */
+    --ikea-blå: #002B8E;
+    --ikea-gul: #FFC502;
+    --lys-grå: #F7F7F7;
+    --sort-gjennomsiktig: rgba(0,0,0,0.5);
+
+    /* Header: */
+    --nav-height: 6rem;
+    --nav-height-minus: -6rem;
+
+    /* Main content: */
+
+    /* Footer: */
+
+    /* Effekter: */
+    --button-default-shadow: 0 .2rem .2rem rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Nullstilling av standard innstillinger: */
+html *, body *{
+    margin: 0;
+    padding: 0;
+    /* Margin & padding behaviour: */
+    box-sizing: border-box;
+}
+
+/* Synlighet av elementer: */
+body    {z-index: 1;}
+header  {z-index: 10;}
+nav     {z-index: 11;}
+main    {z-index: 2;}
+section {z-index: 3;}
+footer  {z-index: 2;}
+
+#menu-btn{
+    /* Visning: */
+    display: none;
+
+    /* Posisjon: */
+    position: absolute;
+}
+
+header{
+    /* Visning: */
+    display: flex;
+    justify-content: center;
+
+    /* Dimensjoner: */
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: var(--nav-height);
+    min-height: var(--nav-height);
+    max-height: var(--nav-height);
+
+    /* Posisjon: */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Bakgrunn: */
+    background-color: red;
+}
+
+header::before{
+    /* Posisjon: */
+    position: fixed;
+    top: 0;
+    left: -100px;
+
+    /* Dimensjoner: */
+    width: calc(100% + 200px);
+    min-width: calc(100% + 200px);
+    max-width: calc(100% + 200px);
+    height: var(--nav-height);
+    min-height: var(--nav-height);
+    max-height: var(--nav-height);
+
+    /* Innhold: */
+    content: "";
+
+    /* Bakgrunn: */
+    background-color: yellow;
+
+    /* Synlighet: */
+    z-index: -2;
+}
+
+[data-content]{
+    /* Visning: */
+    display: flex;
+
+    /* Dimensjon: */
+    width: 100%;
+    max-width: var(--content-max-width);
+}
+
+[data-content] > *{
+    /* Visning: */
+    display: flex;
+
+    /* Posisjon: */
+    margin: 0 var(--content-hz-margin);
+}
+
+[data-content="header"]{
+    /* Visning: */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Dimensjoner: */
+    width: 100%;
+    max-width: var(--content-max-width);
+    height: var(--nav-height);
+
+    /* Posisjon: */
+    position: relative;
+
+    /* Backgrunn */
+    background-color: green;
+}
+
+ikea-logo{
+    /* Visning: */
+    display: flex;
+
+    /* Dimensjoner: */
+    width: 10rem;
+    height: 80%;
+
+    /* Posisjon: */
+    position: relative;
+
+    /* Bakgrunn: */
+    background-color: red;
+}
+
+[data-nav-header]{
+    /* Visning: */
+    display: flex;
+
+    /* Dimensjoner: */
+    height: 100%;
+
+    /* Posisjon: */
+    position: relative;
+
+    /* Bakgrunn: */
+    background-color: skyblue;
+}
+
+[data-nav-header] > ul{
+    /* Visning: */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+
+    /* Dimensjoner: */
+    height: 100%;
+
+    /* Posisjon: */
+    position: relative;
+}
+
+[data-nav-header] > ul > li:not(:last-child){
+    /* Posisjon: */
+    margin-right: 1rem;
+}
+
+[data-nav-header] a{
+    /* Visning: */
+    text-decoration: none;
+}
+
+
+main{
+    /* Kompensasjon for høyde på navbar. */
+    margin-top: var(--nav-height);
+}
+
+section{
+    /* Visning: */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+
+    /* Dimensjoner: */
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    /* Posisjon: */
+    position: relative;
+}
+
+main section{
+    /* Posisjon: */
+    padding: var(--section-vc-margin) 0;
+}
+
+[data-b-color="grey"]{background-color: #F7F7F7;}
+[data-b-color="ikea-blå"]{background-color: var(--ikea-blå);}
+
+section > img,
+section > video{
+    /* Visning: */
+    display: flex;
+    object-fit: cover;
+    object-position: center;
+
+    /* Dimensjoner: */
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+    /* Posisjon: */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Synlighet: */
+    z-index: -1;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-content="main"]{
+    /* Visning: */
+    display: flex;
+}
+
+[data-col]{
+    /* Visning: */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+
+[data-vc-align="top"]{justify-content: flex-start;}
+[data-vc-align="center"]{justify-content: center;}
+[data-vc-align="bottom"]{justify-content: flex-end;}
+
+[data-col="1"]{width: 100%;}
+[data-col="2"]{width: calc(100% / 2);}
+[data-col="3"]{width: calc(100% / 3);}
+
+[data-fullscreen]{
+    /* Visning: */
+    align-items: center; 
+
+    /* Dimensjoner: */
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    /* Posisjon: */
+    padding: 0 0;
+    margin-top: var(--nav-height-minus);
+}
+
+[data-overlay]::after{
+    /* Visning: */
+    display: flex;
+    content: "";
+    z-index: -1;
+
+    /* Dimensjoner: */
+    min-width: 100%;
+    min-height: 100%;
+
+    /* Posisjon: */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+[data-overlay="dark"]::after{background-color: rgba(0, 0, 0, 0.3);}
+[data-overlay="light"]::after{background-color: rgba(255, 255, 255, 0.3);}
+
+[data-center]{
+    /* Visning: */
+    justify-content: center;
+}
+
+[data-center] > *{
+    /* Visning: */
+    text-align: center;
+}
+
+[data-col] img{
+    /* Visning: */
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+
+[data-button]{
+    /* Visning: */
+    display: table;
+    border-radius: .4rem;
+
+    /* Dimensjoner: */
+    padding: .75em 1.25em;
+
+    /* Typo: */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--ikea-blå);
+
+    /* Bakgrunn: */
+    background-color: var(--lys-grå);
+
+    /* Effekt: */
+    box-shadow: var(--button-default-shadow);
+}
+[data-button="small"]{padding: .5em 1em; font-size: 1.2rem;}
+[data-button="large"]{padding: .75em 1.25em; font-size: 1.8rem;}
+
+[data-button-style="ikea-blå"]{color: white; background-color: var(--ikea-blå);}
+
+input, textarea, select{
+    /* Visning: */
+    display: flex;
+    border: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    overflow: hidden;
+    border-radius: .4rem;
+
+    /* Dismensjoner: */
+    max-width: 30rem;
+    width: 30rem;
+    min-width: 30rem;
+    padding: 1em 1.5em;
+    margin: 1rem auto;
+
+    /* Typo: */
+    font-size: 1.6rem;
+
+    /* Posisjon: */
+    position: relative;
+
+    /* Bakgrunn: */
+    background-color: var(--lys-grå);
+
+    /* Effekt: */
+    box-shadow: var(--button-default-shadow);
+}
+
+input{
+    /* Visning: */
+    display: flex;
+
+    /* Dimensjoner: */
+    width: 100%;
+}
+
+select{
+    /* Bakgrunn: */
+    background-image: url("../img/ui/keyboard_arrow_down_black.svg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 1rem);
+    background-position-y: center;
+}
+
+textarea{
+    resize: vertical;
+}
+
+/* Tekstfarge på input-elementer */
+::-webkit-input-placeholder {color: var(--sort-gjennomsiktig);}
+:-moz-placeholder {color: var(--sort-gjennomsiktig); opacity:  1;}
+::-moz-placeholder {color: var(--sort-gjennomsiktig); opacity: 1;}
+:-ms-input-placeholder {color: var(--sort-gjennomsiktig);}
+::-ms-input-placeholder {color: var(--sort-gjennomsiktig);}
+select{color: var(--sort-gjennomsiktig)};
+
+
+
+table, th, td{
+	text-align: left;
+	border: 1px solid #d9d9d9;
+	border-collapse: collapse;
+}
+
+table tr:first-child{
+	text-align: center;
+	font-weight: 400;
+	background-color: var(--ikea-blå);
+	color: white;
+	border: none;
+}
+
+table tr:first-child th:not(:last-child){
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+table td, table th{
+	padding: 10px 15px;
+}
+
+table tr:nth-child(even):not(:first-child){
+    background-color: var(--lys-grå);
+}
+
+table{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #F1F1F1;
+}
+
+
+
+
+footer{
+    background-color: var(--ikea-blå);
+}
+
+footer h3,
+footer p,
+footer a,
+footer ul,
+footer li{
+    color: white;
+}
+
+footer section:last-child{
+    /* Visning: */
+    display: flex;
+
+    /* Dimensjoner: */
+    height: var(--nav-height);
+
+    /* Bakgrunn: */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer section:last-child [data-col]{
+    /* Visning: */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

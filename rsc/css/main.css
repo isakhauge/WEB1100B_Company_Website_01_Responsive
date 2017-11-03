@@ -189,6 +189,7 @@ ikea-logo{
 main{
     /* Kompensasjon for høyde på navbar. */
     margin-top: var(--nav-height);
+    max-width: 100%;
 }
 
 section{
@@ -257,16 +258,19 @@ hr{
     flex-direction: column;
     flex-wrap: wrap;
 
+    /* Posisjon: */
     position: relative;
+}
+
+main [data-col]{
+    /* Dimensjoner: */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 [data-vc-align="top"]{justify-content: flex-start;}
 [data-vc-align="center"]{justify-content: center;}
 [data-vc-align="bottom"]{justify-content: flex-end;}
-
-[data-col="1"]{width: 100%;}
-[data-col="2"]{width: calc(100% / 2);}
-[data-col="3"]{width: calc(100% / 3);}
 
 [data-fullscreen]{
     /* Visning: */
@@ -404,40 +408,55 @@ textarea{
 select{color: var(--sort-gjennomsiktig)};
 
 
-
-table, th, td{
-	text-align: left;
-	border: 1px solid #d9d9d9;
-	border-collapse: collapse;
+table *{
+    /* Visning: */
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
-table tr:first-child{
-	text-align: center;
-	font-weight: 400;
-	background-color: var(--ikea-blå);
-	color: white;
-	border: none;
-}
-
-table tr:first-child th:not(:last-child){
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-table td, table th{
-	padding: 10px 15px;
-}
-
-table tr:nth-child(even):not(:first-child){
-    background-color: var(--lys-grå);
+table, table tr, table th, table td{
+    /* Visning: */
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
 table{
-    width: 100%;
+    /* Visning: */
     overflow: hidden;
-    border-radius: 5px;
-    background-color: #F1F1F1;
+    border-radius: .4rem;
+
+    /* Dimensjoner: */
+    border: 1px solid #ccc;
+
+    /* Effekter: */
+    box-shadow: var(--button-default-shadow);
 }
 
+tr:first-child{
+    /* Typo: */
+    color: white;
+
+    /* Dimensjoner: */
+    border: 1px solid var(--ikea-blå);
+
+    /* Bakgrunn: */
+    background-color: var(--ikea-blå);
+}
+
+table tr:nth-child(even):not(:first-child){background-color: #f7f7f7;}
+table tr:nth-child(odd):not(:first-child){background-color: #e7e7e7;}
+table tr:not(:first-child) th{text-align: left;}
+table tr:not(:first-child) th, table tr:not(:first-child) td{
+    border: 1px solid #ccc;
+}
+table tr:first-child th:not(:last-child){border-right: 1px solid rgba(255, 255, 255, 0.1);}
+
+table th, table td{
+    /* Dimensjoner: */
+    padding: 1rem;
+}
 
 
 

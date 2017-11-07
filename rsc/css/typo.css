@@ -28,6 +28,15 @@ h1,h2,h3,h4,h5,h6,blockquote,p,a,table,th,td,tr,ul,ol,li,caption{
 [data-color="white"]{color: white;}
 [data-color="ikea-blå"]{color: var(--ikea-blå);}
 
+/* Denne koden overskriver font-weight: */
+[data-thin]{font-weight: 100;}
+[data-light]{font-weight: 300;}
+[data-regular]{font-weight: 400;}
+[data-medium]{font-weight: 500;}
+[data-bold]{font-weight: 700;}
+[data-black]{font-weight: 900;}
+
+
 main h1,
 main h2,
 main h3,

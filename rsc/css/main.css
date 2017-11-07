@@ -470,22 +470,26 @@ table th, table td{
 }
 
 [data-pricetag]{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 var(--hzMargin);
+    /*Visning:*/
+    display: table;
     overflow: hidden;
+
+    /*Effekter:*/
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3)
 }
 [data-pricetag] > *{
+    /*Dimensjoner:*/
     margin: 0;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 15px 10px 15px;
 }
 [data-pricetag] h2{
+    /*Typo:*/
     font-size: var(--default-h1-size);
     font-weight: 700;
     text-align: center;
+
+    /*Bakgrunn:*/
     background-color: #f1f1f1;
 }
 [data-pricetag] h3{

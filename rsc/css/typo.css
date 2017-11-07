@@ -1,3 +1,6 @@
+/*
+VARIABLES: START
+*/
 :root{
     --default-font: 'Roboto', sans-serif;
     
@@ -5,7 +8,13 @@
     --default-p-size: 1.4rem;
     --default-p-weight: 400;
     --default-p-line-height: 1.5em;
+
+    /* Heading 1 */
+    --default-h1-size: 3.5rem;
 }
+/*
+VARIABLES: END
+*/
 
 /* Nullstilling av standard innstillinger: */
 html, body{
@@ -24,6 +33,7 @@ h1,h2,h3,h4,h5,h6,blockquote,p,a,table,th,td,tr,ul,ol,li,caption{
     margin: 0;
     padding: 0;
 }
+
 
 [data-color="white"]{color: white;}
 [data-color="ikea-blå"]{color: var(--ikea-blå);}
@@ -134,7 +144,7 @@ main [data-content] a ~ img{margin-top: 2rem;}
 
 main h1{
     /* Typo: */
-    font-size: 3.5rem;
+    font-size: var(--default-h1-size);
     font-weight: 900;
     line-height: 1.3em;
 }

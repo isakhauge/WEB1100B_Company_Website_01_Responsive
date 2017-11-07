@@ -1,0 +1,8 @@
+.Slider{
+	width: 100%;
+}
+
+[data-slider]{
+	max-width: 500px;
+	max-height: 500px;
+}

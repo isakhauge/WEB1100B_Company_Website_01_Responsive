@@ -493,7 +493,7 @@ table th, table td{
     background-color: #f1f1f1;
 }
 [data-pricetag] h3{
-    font-size: var(--default-h3-size);
+    font-size: var(--default-p-size);
     font-weight: 400;
     /* text-transform: uppercase; */
     letter-spacing: 0.05em;

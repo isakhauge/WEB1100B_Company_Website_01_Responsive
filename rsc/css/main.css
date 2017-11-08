@@ -303,6 +303,7 @@ table{
     border-radius: .4rem;
 
     /* Dimensjoner: */
+    width: 100%;
     border: 1px solid #ccc;
 
     /* Effekter: */

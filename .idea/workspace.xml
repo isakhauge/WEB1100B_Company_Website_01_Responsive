@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76661a9a-b3bd-4b13-882c-e4af2a178ec6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/WEB1100B_Company_Website_01_Responsive.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    <list default="true" id="76661a9a-b3bd-4b13-882c-e4af2a178ec6" name="Default" comment=".idea. Endringer">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -181,7 +177,7 @@
       <workItem from="1510084775188" duration="6454000" />
       <workItem from="1510136038847" duration="97000" />
       <workItem from="1510139581983" duration="208000" />
-      <workItem from="1510140219190" duration="22000" />
+      <workItem from="1510140219190" duration="81000" />
     </task>
     <task id="LOCAL-00001" summary="Fikset px til rem.">
       <created>1510086285057</created>
@@ -211,11 +207,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510093764397</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".idea. Endringer">
+      <created>1510140279705</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1510140279705</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12728000" />
+    <option name="totallyTimeSpent" value="12787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,7 +290,8 @@
     <MESSAGE value="Fikset noen variabler i typo, og ordnet litt på [data-pricetag]" />
     <MESSAGE value="Fikset [material-icons] til [data-material-icons]" />
     <MESSAGE value="Laget oversiktlige kommetarer og restrukturert innholdet i mer logisk rekkefølge." />
-    <option name="LAST_COMMIT_MESSAGE" value="Laget oversiktlige kommetarer og restrukturert innholdet i mer logisk rekkefølge." />
+    <MESSAGE value=".idea. Endringer" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea. Endringer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

@@ -324,6 +324,7 @@ tr:first-child{
 table tr:nth-child(even):not(:first-child){background-color: #f7f7f7;}
 table tr:nth-child(odd):not(:first-child){background-color: #e7e7e7;}
 table tr:not(:first-child) th{text-align: left;}
+table tr:not(:first-child) td{text-align: right;}
 table tr:not(:first-child) th, table tr:not(:first-child) td{
     border: 1px solid #ccc;
 }

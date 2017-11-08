@@ -1,8 +1,10 @@
 .Slider{
 	width: 100%;
+	height: 450px;
 }
 
 [data-slider]{
-	max-width: 500px;
-	max-height: 500px;
+	max-width: 450px;
+	max-height: 450px;
+	margin-right: 50px;
 }

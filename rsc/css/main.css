@@ -175,10 +175,16 @@ hr{
 
 
 
-/* Vertikal justering: */
+/* Vertikal justering av elementer: */
 [data-vc-align="top"]{justify-content: flex-start;}
 [data-vc-align="center"]{justify-content: center;}
 [data-vc-align="bottom"]{justify-content: flex-end;}
+
+/* Horisontal justering av tekst: */
+[data-txt-align="left"]{text-align: left;}
+[data-txt-align="center"]{text-align: center;}
+[data-txt-align="rigtht"]{text-align: right;}
+[data-txt-align="justify"]{text-align: justify;}
 
 
 

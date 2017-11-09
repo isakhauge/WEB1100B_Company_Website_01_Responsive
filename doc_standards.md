@@ -55,7 +55,7 @@
 ```
 **Recommended usage:**
 
-Note: One infobox per column element.
+<span style="color:red;">Note: One infobox per column element.<span>
 
 ```html
 <element data-content="main">

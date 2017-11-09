@@ -591,7 +591,8 @@ ikea-logo{
 
 [data-nav-header]{
     /* Visning: */
-    display: flex;
+    /*display: flex;*/
+    display: none;
     flex-direction: column;
     align-items: center;
 

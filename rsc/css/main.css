@@ -25,7 +25,10 @@
     /* Footer: */
 
     /* Effekter: */
-    --button-default-shadow: 0 .2rem .2rem rgba(0, 0, 0, 0.2);
+    --button-default-shadow: 0 .1em .2rem rgba(0, 0, 0, 0.2);
+    --button-hover-shadow: 0 .35em 2rem rgba(0, 0, 0, 0.3);
+    --button-default-anim: translateY(0);
+    --button-hover-anim: translateY(-.25em);
 }
 /*
 #################################################################################
@@ -219,6 +222,7 @@ hr{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.4rem;
+    font-weight: 500;
     color: var(--ikea-blå);
 
     /* Bakgrunn: */
@@ -226,6 +230,18 @@ hr{
 
     /* Effekt: */
     box-shadow: var(--button-default-shadow);
+    transform: var(--button-default-anim);
+    transition-property: box-shadow, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+[data-button]:hover{
+    /*Effekt:*/
+    box-shadow: var(--button-hover-shadow);
+    transform: var(--button-hover-anim);
+    transition-property: box-shadow, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
 [data-button="small"]{padding: .5em 1em; font-size: 1.2rem;}
 [data-button="large"]{padding: .75em 1.25em; font-size: 1.8rem;}
@@ -396,9 +412,9 @@ ikea-infobox{
     overflow: hidden;
 
     /*Dimensjoner:*/
-    width: 20rem;
-    max-width: 20rem;
-    border-radius: .5rem;
+    width: 25rem;
+    max-width: 25rem;
+    border-radius: 1rem;
 
     /*Typo:*/
     color: white;
@@ -442,7 +458,7 @@ ikea-infobox > [data-material-icons]{
     color: inherit;
 
     /*Dimensjoner:*/
-    padding: 2rem 2rem 0 2rem;
+    padding: 3rem 2rem 0 2rem;
 
     /*Bakgrunn:*/
     /*background-color: red;*/
@@ -456,7 +472,7 @@ ikea-infobox > ikea-infobox-title{
     color: inherit;
 
     /*Dimensjoner:*/
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
 
     /*Bakgrunn:*/
     /*background-color: green;*/
@@ -470,7 +486,7 @@ ikea-infobox > ikea-infobox-text{
     color: inherit;
 
     /*Dimensjoner:*/
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 3rem 2rem;
 
     /*Bakgrunn:*/
     /*background-color: blue;*/

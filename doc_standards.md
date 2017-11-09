@@ -4,7 +4,9 @@ Follow these standards
 
 <br>
 
-## Text align:
+## Attributes
+
+### Text align:
 ```html
 <element data-txt-align="*">
     <!-- Affected code -->
@@ -18,7 +20,7 @@ Follow these standards
 
 <br>
 
-## Horizontal align (element):
+### Horizontal align (element):
 ```html
 <element data-hz-align="*">
     <!-- Affected code -->
@@ -31,7 +33,7 @@ Follow these standards
 
 <br>
 
-## Vertical align (element):
+### Vertical align (element):
 ```html
 <element data-vc-align="*">
     <!-- Affected code -->
@@ -41,3 +43,40 @@ Follow these standards
 * left
 * center
 * right
+
+<br>
+
+## JS Functions
+### Infobox
+```html
+<script>
+    infobox("icon_name", "title", "text");
+</script>
+```
+**Recommended usage:**
+
+Note: One infobox per column element.
+
+```html
+<element data-content="main">
+
+    <div data-col="3">
+        <script>
+            infobox("icon_name", "title", "text");
+        </script>
+    </div>
+    
+    <div data-col="3">
+        <script>
+            infobox("icon_name", "title", "text");
+        </script>
+    </div>
+    
+    <div data-col="3">
+        <script>
+            infobox("icon_name", "title", "text");
+        </script>
+    </div>
+    
+</element>
+```

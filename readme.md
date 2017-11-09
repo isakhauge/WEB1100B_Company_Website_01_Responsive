@@ -4,7 +4,7 @@
 <br>
 
 <p align="center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/2000px-Ikea_logo.svg.png" width="100"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/2000px-Ikea_logo.svg.png" width="300"/>
 </p>
 
 <br>

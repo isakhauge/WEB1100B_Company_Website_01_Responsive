@@ -521,7 +521,7 @@ header{
     left: 0;
 
     /* Bakgrunn: */
-    background-color: red;
+    background-color: white;
 }
 
 header::before{
@@ -542,7 +542,10 @@ header::before{
     content: "";
 
     /* Bakgrunn: */
-    background-color: yellow;
+    /*background-color: yellow;*/
+
+    /*Effekt:*/
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,0.1);
 
     /* Synlighet: */
     z-index: -2;
@@ -564,7 +567,7 @@ header::before{
     position: relative;
 
     /* Backgrunn */
-    background-color: green;
+    /*background-color: green;*/
 }
 
 ikea-logo{
@@ -579,7 +582,11 @@ ikea-logo{
     position: relative;
 
     /* Bakgrunn: */
-    background-color: red;
+    background-image: url("../img/brand/ikea_logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    /*background-color: red;*/
 }
 
 [data-nav-header]{
@@ -593,7 +600,7 @@ ikea-logo{
     position: relative;
 
     /* Bakgrunn: */
-    background-color: skyblue;
+    /*background-color: skyblue;*/
 }
 
 [data-nav-header] > ul{

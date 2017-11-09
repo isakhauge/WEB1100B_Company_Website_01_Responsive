@@ -388,7 +388,8 @@ ikea-infobox{
     /*Visngin:*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-grow: 1;
     overflow: hidden;
 
     /*Dimensjoner:*/
@@ -471,6 +472,11 @@ ikea-infobox > ikea-infobox-text{
     /*Bakgrunn:*/
     /*background-color: blue;*/
 }
+
+[data-padding-collapse="top"]{padding-top: 0;}
+[data-padding-collapse="bottom"]{padding-bottom: 0;}
+[data-padding-collapse="left"]{padding-left: 0;}
+[data-padding-collapse="right"]{padding-right: 0;}
 
 /*
 #################################################################################

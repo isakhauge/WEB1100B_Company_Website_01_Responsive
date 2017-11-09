@@ -46,6 +46,20 @@
 
 <br>
 
+### Padding collapse:
+```html
+<element data-padding-collapse="*">
+    <!-- Affected code -->
+</element>
+```
+**Available parameters:**
+* top
+* bottom
+* left
+* right
+
+<br>
+
 ## JS Functions
 ### Infobox
 ```html

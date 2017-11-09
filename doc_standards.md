@@ -53,12 +53,48 @@
     infobox("icon_name", "title", "text");
 </script>
 ```
-**Recommended usage:**
+#### Recommended usage:
 
-_Note: One infobox per column element!_
+##### Infobox with 1 column:
 
 ```html
-<element data-content="main">
+<div data-content="main">
+
+    <div data-col="1">
+        <script>
+            infobox("icon_name", "title", "text");
+        </script>
+    </div>
+    
+</div>
+```
+<br>
+
+##### Infobox with 2 columns:
+
+```html
+<div data-content="main">
+
+    <div data-col="2">
+        <script>
+            infobox("icon_name", "title", "text");
+        </script>
+    </div>
+    
+    <div data-col="2">
+        <script>
+            infobox("icon_name", "title", "text");
+        </script>
+    </div>
+    
+</div>
+```
+<br>
+
+##### Infobox with 3 columns:
+
+```html
+<div data-content="main">
 
     <div data-col="3">
         <script>
@@ -78,5 +114,5 @@ _Note: One infobox per column element!_
         </script>
     </div>
     
-</element>
+</div>
 ```

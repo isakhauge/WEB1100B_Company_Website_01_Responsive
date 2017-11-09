@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en"><!-- HTML-DOKUMENT: START -->
+
+
+<!--
+########################################
+HEAD: START
+########################################
+
+I head setter vi forskjellige
+instillinger for hele HTML-dokumenter,
+Som f.eks. CSS, tittel, og charset.
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS REFERENCES: -->
+    <link rel="stylesheet" type="text/css" href="rsc/css/main_theme.css">
+    <link rel="stylesheet" type="text/css" href="rsc/css/kontakt.css">
+
+    <!-- GOOGLE FONT REFERANSE: -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- GOOGLE MATERIAL ICONS REFERENCE: -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+    <title>Oppland - Kontakt oss</title>
+</head>
+
+<!-- 
+########################################
+HEAD: SLUTT
+########################################
+-->
+
+
+
+
+
+
+
+
+<!--
+########################################
+BODY: START
+########################################
+
+Body er selve hovedplassen for HTML.
+Innenfor body-taggene lager vi innholdet
+for nettsiden vår.
+
+-->
+
+<body>
+
+
+<a href="#top" id="floatingTop" class="floatingBtn"></a>
+
+<div id="top"></div>
+<header><!-- Header: Start -->
+<!-- 
+INFO: I header-tag (ikke head) så skal
+man f.eks. ha menybar/statusbar.
+    -->
+    <nav>
+        <div class="content">
+            <div id="navBarElementLeft">
+                <a id="logo" href="index.html"></a>
+            </div>
+
+            <div id="navBarElementRight">
+                <div id="navMenuContainer">
+                    
+                    <label id="closeMenuBtn" for="closeMenu"><!-- This is the radio button that closes the menu. -->
+                    <input type="radio" id="closeMenu" name="toggle" checked>
+                    <span><i class="material-icons">close</i></span>
+                    </label>
+                    
+                    <label id="openMenuBtn" for="openMenu"><!-- This is the radio button that opens the menu. -->
+                    <input type="radio" id="openMenu" name="toggle">
+                    <span><i class="material-icons">menu</i>&nbsp;&nbsp;Meny</span>
+                    
+                    <div id="openMenuBackground">
+                        <div id="navMenu" class="mainContentCol">
+
+                            <div class="col50 white">
+                                <h3>Hovedmeny</h3>
+                                <ul class="menuNav">
+                                    <li><a href="index.html">Hjem</a></li>
+                                    <li><a href="produkt.html">Produkt</a></li>
+                                    <li><a href="omoss.html">Om oss</a></li>
+                                    <li><a href="kontakt.html">Kontakt oss</a></li>
+                                </ul>
+                            </div>
+                            <div class="col50 white">
+                                <h3>Kundeservice</h3>
+                                <ul class="menuNav">
+                                    <li><a href="http://www.ikea.com/ms/no_NO/customer-service/about-our-products/planning-tools/index.html">Planleggingsverktøy</a></li>
+                                    <li><a href="http://www.ikea.com/ms/no_NO/service-offer/index.html">Service og tjenester</a></li>
+                                    <li><a href="http://www.ikea.com/ms/no_NO/customer_service/shop_offline/secure/betal_din_ordre.html">Betal din ordre</a></li>
+                                    <li><a href="http://www.ikea.com/ms/no_NO/customer_service/kjoekken/kjoekken_kontaktskjema.html">Kjøkkenbestilling</a></li>
+                                    <li><a href="http://www.ikea.com/ms/no_NO/customer_service/contact_us/index.html">Kontakt oss</a></li>
+                                    <li><a href="http://www.ikea.com/ms/no_NO/service-offer/gavekort/index.html">Gavekort</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </label>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+
+</header><!-- Header: Slutt -->
+
+
+
+
+
+
+
+
+<main><!-- Main: Start -->
+<!-- 
+INFO: I main-tag skal selve hoved-
+innholde i nettsiden være.
+ -->
+
+<!-- Landingsside -->
+<section id="kontaktBg">
+    <div class="darken"></div>
+
+    <div class="mainContent center">
+        <div class="vSpace100"></div>
+        <h1 class="white">Kontakt oss</h1>
+        <h2 class="white">Vi hjelper deg med glede</h2>
+        <div class="vSpace100"></div>
+    </div>
+
+</section>
+
+<!--Liste med henvendelser-->           
+<section id ="serviceLinks">
+<div class ="mainContent center">
+    <div class="infoBoxContainer">
+
+        <div class="infoBox center">
+            <h1><i class="material-icons">access_time</i></h1>
+            <h3>Åpningstider</h3>
+            <p class="tider">Mandag-Fredag 10:00-23:00<br>(Lørdag: 09:00 - 21:00)</p>
+        </div>
+
+        <div class="infoBox center">
+            <h1><i class="material-icons">build</i></h1>
+            <h3>Hjelp til montering?</h3>
+            <p>Alt du kjøper kan vi montere for deg til faste lave priser.</p>
+        </div>
+
+        <div class="infoBox center">
+            <h1><i class="material-icons">credit_card</i></h1>
+            <h3>Finansiering</h3>
+            <p>Kjøp nå. Betal når det passer deg.</p>
+        </div>
+
+    </div>
+    <div class="vSpace40"></div>
+    <div class="infoBoxContainer">
+
+        <div class="infoBox center">
+            <h1><i class="material-icons">local_shipping</i></h1>
+            <h3>Transport</h3>
+            <p>Lån tilhenger eller varebil, eller få varene lever på døren.</p>
+        </div>
+
+        <div class="infoBox center">
+            <h1><i class="material-icons">mode_edit</i></h1>
+            <h3>Planlegging</h3>
+            <p>Ikea spesialisten hjelper<br>å planlegge for ditt hjem.</p>
+        </div>
+
+        <div class="infoBox center">
+            <h1><i class="material-icons">compare_arrows</i></h1>
+            <h3>Reklamasjon og retur</h3>
+            <p>Ikke nøl med å kontakte oss!</p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<section class="sectGrey sectLine">
+    <div class="mainContent center">
+
+            <h3 class="thin center">
+                Spar tid på å finne svaret selv i vår selvhjelp under.<br />
+                Får du ikke svar på ditt spørsmål, kan du<br />
+                kontakte oss gjennom vårt<br />
+                kontaktskjema.
+            </h3>
+        
+    </div>
+</section>
+
+
+<section class="sectBlue">
+    <div class="mainContentCol white">
+
+        <div class="col50">
+            <h3 class="white">Kontaktskjema</h3>
+
+            <p class="justify white">
+            Ønsker du å skrive til oss finner du kontaktskjema under "Reklamasjon og retur" ved å velge kategorien som passer best til din henvendelse.
+            </p>
+
+            <h3 class="white">Telefon</h3>
+            <p class="white"><i class="material-icons">access_time</i>&nbsp;&nbsp;&nbsp;07:00 til 17:30 (18:00)</p>
+            <p class="white"><i class="material-icons">local_phone</i>&nbsp;&nbsp;&nbsp;(+47) 98678987</p>
+
+    
+        </div>
+
+        <div class="col50">
+                <h3 class="white">Selvhjelp</h3>
+
+        <!--linker til diverse service sider-->
+            <ul id="serviceLinks" class="white">
+                <li><i class="material-icons">chevron_right</i><a href="http://www.ikea.com/ms/no_NO/customer_service/kjoekken/kjoekken_kontaktskjema.html">Bestille kjøkken hjemmefra</a></li>
+                <li><i class="material-icons">chevron_right</i><a href="http://www.ikea.com/ms/no_NO/customer-service/etterkjopsservice/index.html">Bestille utgåtte deler til kjøkkenet</a></li>
+                <li><i class="material-icons">chevron_right</i><a href="http://www.ikea.com/ms/no_NO/ikny_splash.html">Finn nærmeste varehus</a></li>
+                <li><i class="material-icons">chevron_right</i><a href="http://www.ikea.com/ms/no_NO/customer_service/reklamasjon/reklamasjon.html">Hvordan reklamerer jeg?</a></li>
+                <li><i class="material-icons">chevron_right</i><a href="http://www.ikea.com/ms/no_NO/cookies/cookies_explorer.html">Aktivering av cookies</a></li>
+                <li><i class="material-icons">chevron_right</i><a href="http://www.ikea.com/ms/no_NO/customer-service/about-our-products/appliance-claims/appliance-claims.html">Kontakte IKEA hvitevareservice</a>
+            </ul>
+
+
+        </div>
+
+    </div>
+</section>
+
+
+<!--Kontaktskjema for kundehendvendelser-->
+<section class="kontaktskjema">
+    <div class="mainContent">
+        <h2 class="center">Kontaktskjema</h2>
+
+        <div class="vSpace40"></div>
+
+        <form class="ikeaForm">
+            <input type="text"      name="Fornavn"  placeholder="Fornavn">
+            <input type="text"      name="Etternan" placeholder="Etternavn">
+            <input type="mail"      name="Epost"    placeholder="Epost">
+
+            <div class="vSpace40"></div>
+            
+            <select>
+                <option value="Hjelp til montering">Hjelp til montering</option>
+                <option value="Vare skadet ved transport">Vare skadet ved transport</option>
+                <option value="Reklamasjon og  retur">Reklamasjon og  retur</option>
+                <option value="Ingen av de foregående">Ingen av de foregående</option>
+            </select>
+
+            <div class="vSpace40"></div>
+
+            <input type="text"          name="Emne"     placeholder="Emne"> 
+            <textarea maxlength="250"   name="Message"  placeholder="Skriv inn din melding (max 250 bokstaver)"></textarea>
+
+            <div class="vSpace40"></div>
+
+            <input class="mediaBtn mediumBtn" type="submit" value="Send melding" name="submit">
+        </form>
+
+    </div>
+</section>
+
+
+
+
+
+</main><!-- Main: Slutt -->
+
+
+
+
+
+
+
+
+<footer class="bgFooter"><!-- Footer: Start -->
+<!-- 
+I footer-tag skal footeren være.
+    -->
+
+    <div id="footerTop" class="hide"></div>
+
+
+    <div id="footerMain">
+
+        <div class="content">
+
+            <div class="col50">
+                <div class="logo"></div>
+                <p>
+                    <span class="bold">Inter IKEA Holding S.A</span><br />
+                    Rue de Grass 100<br />
+                    6700 Arlon-Sterpenich<br />
+                    Belgia
+                </p>
+
+                <div class="vSpace20"></div>
+
+                <p><span class="bold">Kundeservice</span></p>
+                <ul class="footerNav">
+                    <li><a href="http://www.ikea.com/ms/no_NO/customer-service/about-our-products/planning-tools/index.html">Planleggingsverktøy</a></li>
+                    <li><a href="http://www.ikea.com/ms/no_NO/service-offer/index.html">Service og tjenester</a></li>
+                    <li><a href="http://www.ikea.com/ms/no_NO/customer_service/shop_offline/secure/betal_din_ordre.html">Betal din ordre</a></li>
+                    <li><a href="http://www.ikea.com/ms/no_NO/customer_service/kjoekken/kjoekken_kontaktskjema.html">Kjøkkenbestilling</a></li>
+                    <li><a href="http://www.ikea.com/ms/no_NO/customer_service/contact_us/index.html">Kontakt oss</a></li>
+                    <li><a href="http://www.ikea.com/ms/no_NO/service-offer/gavekort/index.html">Gavekort</a></li>
+                </ul>
+                
+            </div>
+
+            <div class="col50">
+                    <p class="justify">
+                        <span class="bold">Ansvarsfraskrivelse</span><br />
+                        Denne hjemmesiden er et fiktivt redesign av Ikeas hjemmeside, isolert rundt ett produkt. Den er laget i regi av faget WEB1100B, og er kun ment for faglig utvikling — ikke kommersielt bruk eller offentlig publisering på Internett. Alle bilder og videomateriale er hentet fra eksterne kilder, og vi påberoper oss ikke eierskap over disse. Vi har fått godkjennelse fra Ikeas PR-avdeling til å bruke deres egne bilder og videomateriale til dette skoleprosjektet.
+                    </p>
+                    <p>
+                        <span class="bold">Skoleoppgave</span><br />
+                        Skole: Høyskolen i Sørøst-Norge (HSN)<br />
+                        Emne: Web-utvikling og HCI (WEB1100B)<br />
+                        Prosjektstart: 20. September 2017
+                    </p>
+                    <p>
+                        <span class="bold">Gruppemedlemmer</span><br />
+                        Anders: anderskoo@live.no<br />
+                        Kim: kimviggo.pedersen@gmail.com<br />
+                        Lars Stian: larsstianf@outlook.com<br />
+                        Isak: isakhauge@gmail.com
+                    </p>
+                    <p>
+                        <span class="bold">Bildebruk og referanser</span><br />
+                        <a href="referanse.html">Referanseliste</a>
+                    </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="footerBottom">
+        <p class="footerCreds center">
+            Laget av Silicon Valley Boys<br />
+            KUN MED HTML OG CSS<br />
+            OPPHAVSRETT &copy;2017
+        </p>
+    </div>
+
+</footer><!-- Footer: Slutt -->
+    
+
+
+
+
+
+
+
+</body>
+
+<!--
+########################################
+BODY: SLUTT
+########################################
+-->
+
+
+
+
+
+
+
+
+</html><!-- HTML-DOKUMENT: SLUTT -->

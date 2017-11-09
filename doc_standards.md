@@ -4,7 +4,7 @@ Follow these standards
 
 <br>
 
-##Text align:
+## Text align:
 ```html
 <element data-txt-align="*">
     <!-- Affected code -->
@@ -18,7 +18,7 @@ Follow these standards
 
 <br>
 
-##Horizontal align (element):
+## Horizontal align (element):
 ```html
 <element data-hz-align="*">
     <!-- Affected code -->
@@ -31,7 +31,7 @@ Follow these standards
 
 <br>
 
-##Vertical align (element):
+## Vertical align (element):
 ```html
 <element data-vc-align="*">
     <!-- Affected code -->

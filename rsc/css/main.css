@@ -153,9 +153,12 @@ footer  {z-index: 2;}
 
 /* Horisontal linje: */
 hr{
+    /*Dimsjoner:*/
     border: 0;
     height: 1px;
     width: 100%;
+
+    /*Bakgrunn:*/
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -248,7 +251,7 @@ input, textarea, select{
     width: 30rem;
     min-width: 30rem;
     padding: 1em 1.5em;
-    margin: 1rem auto;
+    margin: 1rem 0;
 
     /* Typo: */
     font-size: 1.6rem;

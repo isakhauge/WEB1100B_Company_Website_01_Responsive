@@ -1,6 +1,12 @@
 # Readme
 ## WEB1100B - Responsivt nettsted
 
+<br>
+
+![Ikea Banner](https://www.artsfon.com/pic/201510/1366x768/artsfon.com-73926.jpg)
+
+<br>
+
 ### Prosjektbeskrivelse
 Firmaet vi har hatt fokus på er Ikea. De leverer mange produkter, så vi har satt fokus på en enkelt seng på vårt prosjekt.
 Senga vi valgte heter Oppland. Valget havnet på denne av tilfeldige årsaker, kanskje fordi den så behagelig ut? :)

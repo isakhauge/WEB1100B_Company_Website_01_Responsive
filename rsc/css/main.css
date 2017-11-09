@@ -180,6 +180,11 @@ hr{
 [data-vc-align="center"]{justify-content: center;}
 [data-vc-align="bottom"]{justify-content: flex-end;}
 
+/* Vertikal justering av elementer: */
+[data-hz-align="top"]{align-items: flex-start;}
+[data-hz-align="center"]{align-items: center;}
+[data-hz-align="bottom"]{align-items: flex-end;}
+
 /* Horisontal justering av tekst: */
 [data-txt-align="left"]{text-align: left;}
 [data-txt-align="center"]{text-align: center;}
@@ -377,6 +382,94 @@ table th, table td{
     letter-spacing: 0.05em;
     color: white;
     background-color: var(--ikea-blå);
+}
+
+ikea-infobox{
+    /*Visngin:*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    /*Dimensjoner:*/
+    width: 20rem;
+    max-width: 20rem;
+    border-radius: .5rem;
+
+    /*Typo:*/
+    color: white;
+
+    /*Bakgrunn:*/
+    background-color: var(--ikea-blå);
+
+    /*Effekt:*/
+    box-shadow: 0 .5rem 4rem rgba(0,0,0,0.3);
+    transform: translateY(0);
+    transition-property: box-shadow, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+ikea-infobox:hover{
+    /*Effekt:*/
+    box-shadow: 0 1.5rem 3.5rem rgba(0,0,0,0.3);
+    transform: translateY(-1rem);
+    transition-property: box-shadow, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+ikea-infobox > ikea-infobox-icon,
+ikea-infobox > ikea-infobox-title,
+ikea-infobox > ikea-infobox-text{
+    /*Visning:*/
+    display: block;
+
+    /*Typo:*/
+    text-align: center;
+
+    /*Dimensjoner:*/
+    width: 100%;
+}
+
+ikea-infobox > [data-material-icons]{
+    /*Typo:*/
+    font-size: 4.5rem;
+    color: inherit;
+
+    /*Dimensjoner:*/
+    padding: 2rem 2rem 0 2rem;
+
+    /*Bakgrunn:*/
+    /*background-color: red;*/
+}
+
+ikea-infobox > ikea-infobox-title{
+    /*Typo:*/
+    font-size: var(--default-h3-size);
+    font-weight: 700;
+    line-height: 1.3em;
+    color: inherit;
+
+    /*Dimensjoner:*/
+    padding: 1rem 2rem 2rem 2rem;
+
+    /*Bakgrunn:*/
+    /*background-color: green;*/
+}
+
+ikea-infobox > ikea-infobox-text{
+    /*Typo:*/
+    font-size: var(--default-p-size);
+    font-weight: 400;
+    line-height: 1.3em;
+    color: inherit;
+
+    /*Dimensjoner:*/
+    padding: 0 2rem 2rem 2rem;
+
+    /*Bakgrunn:*/
+    /*background-color: blue;*/
 }
 
 /*

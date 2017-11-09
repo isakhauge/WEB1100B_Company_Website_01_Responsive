@@ -1,6 +1,6 @@
 # Document standards (HTML)
 
-Follow these standards 
+**Follow these standards in order to ensure consistent use of code across the website.**
 
 <br>
 

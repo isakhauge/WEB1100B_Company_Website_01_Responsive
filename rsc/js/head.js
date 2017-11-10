@@ -30,6 +30,9 @@ document.write(
     '<script src="rsc/js/custom_dom.js"></script>' +
     '<script src="rsc/js/functions.js"></script>' +
     '<script src="rsc/js/smooth_scroll.js"></script>' +
-    '<!-- JS import: End -->'
+    '<!-- JS import: End -->' +
+
+    '<div id="top" data-scroll-point="apex"></div>' +
+    '<a href="#top" data-scroll-up></a>'
 
 );

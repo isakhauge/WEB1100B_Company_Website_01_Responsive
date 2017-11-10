@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
     <script src="rsc/js/head.js"></script>
 
     <title>IKEA - Oppland</title>
@@ -10,7 +12,8 @@
 
 <body>
 
-
+    <div id="top" data-scroll-point="apex"></div>
+    <a href="#top" data-scroll-up></a>
     
     <header>
 
@@ -28,135 +31,85 @@
             <div data-content="main" data-color="white">
 
                 <div data-col="1" data-hz-align="center">
-                    <h1>IKEA - Oppland</h1>
-                    <h2>Svenskefaen</h2>
+                    <h1>Sov bedre enn  noensinne</h1>
+                    <h2>Få din Oppland-sang i dag</h2>
+                    <div data-space="20"></div>
                     <a href="produkt.html" data-button="large" data-button-style="ikea-blå">Se produkt</a>
                 </div>
 
             </div>
 
+            <a href="#section01" data-scroll-down></a>
+
         </section>
 
         <hr>
 
-
-
-        <section data-padding-collapse="bottom" data-b-color="grey">
-
-            <div data-content="main">
-
-                <div data-col="3" data-hz-align="center">
-
-                    <script>
-                        infobox("home", "Title", "Lorem ipsum jnawdjn ufjsdfijdkmkm kmkawdn jjj");
-                    </script>
-
-                </div>
-
-                <div data-col="3" data-hz-align="center">
-
-                    <script>
-                        infobox("account_balance", "Title", "Lorem ipsum");
-                    </script>
-
-                </div>
-
-                <div data-col="3" data-hz-align="center">
-
-                    <script>
-                        infobox("home", "Title", "Lorem ipsum");
-                    </script>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section data-padding-collapse="top" data-b-color="grey">
-
-            <div data-content="main">
-
-                <div data-col="3" data-hz-align="center">
-
-                    <script>
-                        infobox("home", "Title", "Lorem ipsum");
-                    </script>
-
-                </div>
-
-                <div data-col="3" data-hz-align="center">
-
-                    <script>
-                        infobox("home", "Title", "Lorem ipsum");
-                    </script>
-
-                </div>
-
-                <div data-col="3" data-hz-align="center">
-
-                    <script>
-                        infobox("home", "Title", "Lorem ipsum");
-                    </script>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <hr>
+        <div id="section01" data-scroll-point="default"></div>
 
         <section>
-            <div data-content="main">
-
-                <div data-col="2">
-                    <h3>Dette er kolonne nr 1</h3>
-                    <h4>Test.</h4>
-                    <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer. Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen av Letraset-ark med avsnitt fra Lorem Ipsum, og senere med sideombrekkingsprogrammet Aldus PageMaker som tok i bruk nettopp Lorem Ipsum for dummytekst.</p>
-                    <img src="rsc/img/landingPageBanner.jpg" alt="">
-                </div>
-
-
-                <div data-col="2">
-                    <h3>Dette er kolonne nr 2</h3>
-                    <h4>Test.</h4>
-                    <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer. Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen av Letraset-ark med avsnitt fra Lorem Ipsum, og senere med sideombrekkingsprogrammet Aldus PageMaker som tok i bruk nettopp Lorem Ipsum for dummytekst.</p>
-                    <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer. Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen av Letraset-ark med avsnitt fra Lorem Ipsum, og senere med sideombrekkingsprogrammet Aldus PageMaker som tok i bruk nettopp Lorem Ipsum for dummytekst.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <hr>
-
-        <section data-b-color="grey">
-
-            <!-- <img src="rsc/img/landingPageBanner.jpg" alt="Banner for hovedside"> -->
 
             <div data-content="main">
 
-                <div data-col="2">
-                    <h3>Dette er kolonne nr 3</h3>
-                    <h4>Test.</h4>
-                    <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer. Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen av Letraset-ark med avsnitt fra Lorem Ipsum, og senere med sideombrekkingsprogrammet Aldus PageMaker som tok i bruk nettopp Lorem Ipsum for dummytekst.</p>
-                    <img src="rsc/img/landingPageBanner.jpg" alt="">
+                <div data-col="3" data-hz-align="center">
+
+                    <script>
+                        infobox("verified_user", "Bærekraftig materiale", "Laget av nordisk Ask.");
+                    </script>
+
                 </div>
 
+                <div data-col="3" data-hz-align="center">
 
-                <div data-col="2">
-                    <h3>Dette er kolonne nr 4</h3>
-                    <h4>Test.</h4>
-                    <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer. Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen av Letraset-ark med avsnitt fra Lorem Ipsum, og senere med sideombrekkingsprogrammet Aldus PageMaker som tok i bruk nettopp Lorem Ipsum for dummytekst.</p>
-                    <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer. Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen av Letraset-ark med avsnitt fra Lorem Ipsum, og senere med sideombrekkingsprogrammet Aldus PageMaker som tok i bruk nettopp Lorem Ipsum for dummytekst.</p>
+                    <script>
+                        infobox("account_balance", "Lukseriøs", "Stor seng med hodegavle og børstet trefiner.");
+                    </script>
+
+                </div>
+
+                <div data-col="3" data-hz-align="center">
+
+                    <script>
+                        infobox("zoom_out_map", "Queen Size", "Sengen kommer i to størrelser 180x200cm og 160x200cm.");
+                    </script>
+
                 </div>
 
             </div>
+
         </section>
 
-        <hr>
+
+        <section data-padding-collapse="top">
+
+            <div data-content="main">
+
+                <div data-col="1" data-txt-align="center" data-hz-align="center">
+
+                    <h1>2.995,- kr</h1>
+                    <p>Sengebunn, madrass og sengetøy selges separat.</p>
+                    <a href="produkt.html" data-button="large" data-button-style="ikea-blå">Gå til produktsiden</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section data-overlay="dark">
+
+            <img src="rsc/img/ash_texture.jpg" alt="Ask">
+            <div data-content="main" data-color="white">
+
+                <div data-col="1" data-txt-align="center" data-hz-align="center">
+                    <h2 data-bold>Laget av skandinavisk Ask</h2>
+                    <h3 data-regular>Beiset ask med brunbeiset askefiner</h3>
+                </div>
+
+            </div>
+
+        </section>
 
         <section>
 
@@ -164,17 +117,11 @@
 
                 <div data-col="1">
 
-                    <h1>Eksempeloverskrift</h1>
-                    <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok. Lorem Ipsum har tålt tidens tann usedvanlig godt, og har i tillegg til å bestå gjennom fem århundrer også tålt spranget over til elektronisk typografi uten vesentlige endringer. Lorem Ipsum ble gjort allment kjent i 1960-årene ved lanseringen av Letraset-ark med avsnitt fra Lorem Ipsum, og senere med sideombrekkingsprogrammet Aldus PageMaker som tok i bruk nettopp Lorem Ipsum for dummytekst.</p>
-
-                    <div data-pricetag>
-                        <h2>2.995,-</h2>
-                        <h3>NOK 2.396,- &nbsp; Ekskludert mva.</h3>
-                    </div>
-
-                    <a href="#" data-button="small"><i data-material-icons>face</i>Liten knapp</a>
-                    <a href="#" data-button data-button-style="ikea-blå"><i data-material-icons>face</i>Default knapp</a>
-                    <a href="#" data-button="large"><i data-material-icons>face</i>Stor knapp</a>
+                    <h1>Designertanker</h1>
+                    <h3 data-light>
+                        «Det var spennende å jobbe med en ny type børstet trefiner. Det ga hele soveromsserien OPPLAND det rette kvalitetspreget, noe som også kan ses i de brukervennlige håndtakene og skuffene som lukker seg mykt og sakte. Det er viktig med tekstiler og myke materialer for å få et innbydende og koselig soverom. Derfor har hodegavlen et vaskbart trekk som er behagelig å lene seg inntil når du vil lese på senga. Jeg håper at møbelet bidrar til å gi deg en god natts søvn.»
+                    </h3>
+                    <h4 style="text-align: right">Designer Ehlén Johansson</h4>
 
                 </div>
 
@@ -185,124 +132,21 @@
 
         <section>
 
-            <div data-content="main">
+            <video src="rsc/vid/ikea_beds.mp4" autoplay muted loop></video>
 
-                <div data-col="1">
+            <div data-content="main" data-color="white">
 
-                    <input type="text" name="Fornavn" id="fnavn" placeholder="Ditt fornavn">
-                    <input type="text" name="Etternavn" id="enavn" placeholder="Ditt etternavn">
-                    <input type="text" name="Epost-adresse" id="epost" placeholder="Din epost">
+                <div data-col="1" data-hz-align="center" data-txt-align="center">
 
-                    <select name="Valg" id="select-box">
-                        <option value="default" selected disabled>Velg noe din jævel</option>
-                        <option value="one">Valg 1</option>
-                        <option value="two">Valg 2</option>
-                        <option value="three">Valg 3</option>
-                    </select>
-
-                    <textarea name="Meldingsfelt" id="message" placeholder="Din melding"></textarea>
+                    <h1>Sov bedre i en god seng</h1>
+                    <h2>Vi vet at en god seng er en<br>
+                        forutsenting for bra<br>
+                        søvnkvalitet.</h2>
 
                 </div>
 
             </div>
 
-        </section>
-
-
-        <section>
-
-            <div data-content="main">
-
-                <div data-col="1">
-
-                    <h2>Prisoversikt</h2>
-                    <h3>Ribbebunn og rammestørrelser</h3>
-
-                    <br>
-
-                    <table>
-                        <tr>
-                            <th>Ribbebunn:</th>
-                            <th>Pris for 160x200 cm</th>
-                            <th>Pris for 180x200 cm</th>
-                        </tr>
-                        <tr>
-                            <th>Luröy</th>
-                            <td>3.295,-</td>
-                            <td>3.695,-</td>
-                        </tr>
-                        <tr>
-                            <th>Leirsund</th>
-                            <td>3.985,-</td>
-                            <td>4.585,-</td>
-                        </tr>
-                        <tr>
-                            <th>Lönset</th>
-                            <td>3.585,-</td>
-                            <td>4.025,-</td>
-                        </tr>
-                    </table>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section>
-
-            <div data-content="main">
-
-                <div data-col="2" data-vc-align="center">
-
-                    <img src="rsc/img/landingPageBanner.jpg">
-
-                </div>
-
-                <div data-col="2" data-vc-align="center">
-
-                    <h2>Oppland</h2>
-                    <ul>
-                        <li>Om du leser, surfer eller ser TV i sengen, er den myke hodegavlen behagelig å lene seg mot</li>
-                        <li>Enkel å holde ren siden du kan ta av trekket og vaske det i maskin.</li>
-                        <li>Det naturlige årringmønsteret og den tydelige teksturen i treet fremheves ved først å børste askefineren og deretter mattlakke den.</li>
-                        <li>Trefineren vil gjøre at sengen bare blir vakrere med årene.</li>
-                        <li>Justerbare sengesider slik at du kan bruke madrasser av ulike tykkelser.</li>
-                        <li>17 ribber av sjiktlimt bjørk tilpasser seg kroppsvekten din og gir madrassen økt smidighet.</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section>
-    
-            <div data-content="main">
-    
-                <div data-col="2">
-    
-                    <h2> Greit å vite </h2>
-                    <ul>
-                        <li>SKORVA midtbalk er inkludert i prisen, men er pakket separat.</li>
-                        <li>Den er nødvendig for å gjøre sengen stabil og for å holde madrassene på plass.</li>
-                        <li>Sengebunn er inkludert i prisen, men må plukkes separat.</li>
-                        <li>Skap ekstra oppbevaringsplass under senga med RÖMSKOG sengeskuffer.</li>
-                    </ul>
-    
-                </div>
-    
-                <div data-col="2">
-    
-                    <img src="rsc/img/landingPageBanner.jpg">
-    
-                </div>
-    
-            </div>
-    
         </section>
 
 
@@ -317,6 +161,7 @@
 
     </footer>
 
+    <script src="rsc/js/smooth_scroll.js"></script>
 
 </body>
 

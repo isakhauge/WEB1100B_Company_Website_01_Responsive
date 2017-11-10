@@ -7,7 +7,7 @@
     /* Globale innstillinger: */
     --logo: url("../img/ikea_logo.svg");
     --content-max-width: 900px;
-    --section-vc-margin: 8rem;
+    --section-vc-padding: 8rem;
     --content-hz-margin: 3rem;
 
     /* Farger: */
@@ -23,12 +23,17 @@
     /* Main content: */
 
     /* Footer: */
+    --footer-vc-padding: 4rem;
 
     /* Effekter: */
     --button-default-shadow: 0 .1em .2rem rgba(0, 0, 0, 0.2);
     --button-hover-shadow: 0 .35em 2rem rgba(0, 0, 0, 0.3);
     --button-default-anim: translateY(0);
-    --button-hover-anim: translateY(-.25em);
+    --button-hover-anim: translateY(-.25rem);
+    --infobox-default-shadow: 0 .5rem 1rem rgba(0,0,0,0.3);
+    --infobox-hover-shadow: 0 .75rem 3rem rgba(0,0,0,0.6);
+    --infobox-default-anim: translateY(0);
+    --infobox-hover-anim: translateY(-.25rem);
 }
 /*
 #################################################################################
@@ -85,10 +90,12 @@ html *, body *{
 /* Synlighet av elementer: */
 body    {z-index: 1;}
 header  {z-index: 10;}
-nav     {z-index: 11;}
 main    {z-index: 2;}
 section {z-index: 3;}
 footer  {z-index: 2;}
+
+[data-nav-header]{z-index: -3;}
+[data-scroll-up]{z-index: 10;}
 
 /*
 #################################################################################
@@ -172,7 +179,6 @@ hr{
     /* Visning: */
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 
     /* Posisjon: */
     position: relative;
@@ -214,9 +220,13 @@ hr{
     /* Visning: */
     display: table;
     border-radius: .4rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 
     /* Dimensjoner: */
-    padding: .75em 1.25em;
+    padding: .75em 1em;
 
     /* Typo: */
     text-decoration: none;
@@ -243,8 +253,8 @@ hr{
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
 }
-[data-button="small"]{padding: .5em 1em; font-size: 1.2rem;}
-[data-button="large"]{padding: .75em 1.25em; font-size: 1.8rem;}
+[data-button="small"]{padding: .5em .75em; font-size: 1.2rem;}
+[data-button="large"]{padding: .5em .75em; font-size: 2rem; font-weight: 900;}
 [data-button-style="ikea-blå"]{color: white; background-color: var(--ikea-blå);}
 
 
@@ -264,8 +274,7 @@ input, textarea, select{
 
     /* Dismensjoner: */
     max-width: 30rem;
-    width: 30rem;
-    min-width: 30rem;
+    width: 100%;
     padding: 1em 1.5em;
     margin: 1rem 0;
 
@@ -308,7 +317,7 @@ textarea{
 ::-moz-placeholder {color: var(--sort-gjennomsiktig); opacity: 1;}
 :-ms-input-placeholder {color: var(--sort-gjennomsiktig);}
 ::-ms-input-placeholder {color: var(--sort-gjennomsiktig);}
-select{color: var(--sort-gjennomsiktig)};
+select{color: var(--sort-gjennomsiktig);}
 
 
 
@@ -410,6 +419,10 @@ ikea-infobox{
     justify-content: flex-start;
     flex-grow: 1;
     overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 
     /*Dimensjoner:*/
     width: 25rem;
@@ -423,8 +436,8 @@ ikea-infobox{
     background-color: var(--ikea-blå);
 
     /*Effekt:*/
-    box-shadow: 0 .5rem 4rem rgba(0,0,0,0.3);
-    transform: translateY(0);
+    box-shadow: var(--infobox-default-shadow);
+    transform: var(--infobox-default-anim);
     transition-property: box-shadow, transform;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
@@ -432,8 +445,8 @@ ikea-infobox{
 
 ikea-infobox:hover{
     /*Effekt:*/
-    box-shadow: 0 1.5rem 3.5rem rgba(0,0,0,0.3);
-    transform: translateY(-1rem);
+    box-shadow: var(--infobox-hover-shadow);
+    transform: var(--infobox-hover-anim);
     transition-property: box-shadow, transform;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
@@ -497,9 +510,151 @@ ikea-infobox > ikea-infobox-text{
 [data-padding-collapse="left"]{padding-left: 0;}
 [data-padding-collapse="right"]{padding-right: 0;}
 
+[data-scroll-down]{
+    /*Visning:*/
+    display: flex;
+    cursor: pointer;
+
+    /*Dimensjoner:*/
+    height: 6rem;
+    width: 6rem;
+
+    /*Posisjon:*/
+    position: absolute;
+    bottom: var(--nav-height);
+    left: calc(50% - ( 6rem / 2 ) );
+
+    /*Bakgrunn:*/
+    background-image: url("../img/ui/arrow_down_white.svg");
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position: center;
+
+
+    /*Effekter:*/
+    filter: drop-shadow(0 .2rem .2rem rgba(0,0,0,0.4));
+
+    /*Anima:*/
+    animation: bounce 1s infinite ease-out;
+    -webkit-animation: bounce 1s infinite ease-out;
+    -moz-animation: bounce 1s infinite ease-out;
+    -ms-animation: bounce 1s infinite ease-out;
+    -o-animation: bounce 1s infinite ease-out;
+}
+
+[data-scroll-up]{
+    /*Visning:*/
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+
+    /*Dimensjoner:*/
+    width: 5rem;
+    height: 5rem;
+
+    /*Posisjon:*/
+    position: fixed;
+    bottom: var(--content-hz-margin);
+    right: var(--content-hz-margin);
+
+    /*Bakgrunn:*/
+    background-image: url("../img/ui/arrow_up.svg");
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: center;
+    background-color: white;
+
+    /*Effekter:*/
+    box-shadow: var(--button-default-shadow);
+    transform: var(--button-default-anim);
+    transition-property: box-shadow, transform;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+[data-scroll-up]:hover{
+    box-shadow: var(--button-hover-shadow);
+    transform: var(--button-hover-anim);
+    transition-property: box-shadow, transform;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+[data-scroll-point]{
+    /*Posisjon:*/
+    position: absolute;
+}
+[data-scroll-point="default"]{margin-top: var(--nav-height-minus);}
+[data-scroll-point="apex"]{top:0;}
+
 /*
 #################################################################################
 ### GLOBALE STILER: SLUTT
+#################################################################################
+*/
+
+
+
+
+/*
+=======================================
+*/
+
+
+
+
+/*
+#################################################################################
+### ANIMASJONER: START
+#################################################################################
+*/
+
+@keyframes bounce{ /* Scroll-down-arrow animation. */
+
+    0%{
+        transform: translate(0, -10px);
+        -webkit-transform: translate(0, -10px);
+        -moz-transform: translate(0, -10px);
+        -ms-transform: translate(0, -10px);
+        -o-transform: translate(0, -10px);
+    }
+
+    25%{
+        transform: translate(0, -8px);
+        -webkit-transform: translate(0, -8px);
+        -moz-transform: translate(0, -8px);
+        -ms-transform: translate(0, -8px);
+        -o-transform: translate(0, -8px);
+
+    }
+
+    50%{
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+    }
+
+    75%{
+        transform: translate(0, -8px);
+        -webkit-transform: translate(0, -8px);
+        -moz-transform: translate(0, -8px);
+        -ms-transform: translate(0, -8px);
+        -o-transform: translate(0, -8px);
+    }
+
+    100%{
+        transform: translate(0, -10px);
+        -webkit-transform: translate(0, -10px);
+        -moz-transform: translate(0, -10px);
+        -ms-transform: translate(0, -10px);
+        -o-transform: translate(0, -10px);
+    }
+}
+/*
+#################################################################################
+### ANIMASJONER: SLUTT
 #################################################################################
 */
 
@@ -519,13 +674,6 @@ ikea-infobox > ikea-infobox-text{
 #################################################################################
 */
 
-#menu-btn{
-    /* Visning: */
-    display: none;
-
-    /* Posisjon: */
-    position: absolute;
-}
 
 header{
     /* Visning: */
@@ -544,9 +692,6 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-
-    /* Bakgrunn: */
-    background-color: white;
 }
 
 header::before{
@@ -567,7 +712,7 @@ header::before{
     content: "";
 
     /* Bakgrunn: */
-    /*background-color: yellow;*/
+    background-color: white;
 
     /*Effekt:*/
     box-shadow: 0 .5rem 2rem rgba(0,0,0,0.1);
@@ -598,10 +743,11 @@ header::before{
 ikea-logo{
     /* Visning: */
     display: flex;
+    cursor: pointer;
 
     /* Dimensjoner: */
     width: 10rem;
-    height: 80%;
+    height: 4rem;
 
     /* Posisjon: */
     position: relative;
@@ -616,10 +762,11 @@ ikea-logo{
 
 [data-nav-header]{
     /* Visning: */
-    /*display: flex;*/
     display: none;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    border-radius: 0 0 1rem 1rem;
 
     /* Dimensjoner: */
     height: 50vh;
@@ -633,11 +780,42 @@ ikea-logo{
     position: fixed;
 
     /* Bakgrunn: */
-    background-color: rgba(0, 43, 142, 0.5);
+    background-color: rgba(0, 43, 142, 0.9);
+
+    /*Effekter:*/
+    box-shadow: 0 1rem 4rem rgba(0,0,0,0.5);
+
+    /*Anim:*/
 }
 
-[data-nav-header] > [data-content]{
+
+[data-nav-header] > [data-content="header"]{
+    /*Visning:*/
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
+
+    /*Dimensjon*/
+    height: auto;
+
+    /*Posisjon:*/
+    margin: 0 auto;
+    margin-top: calc( var(--nav-height) * 0.5);
+    position: relative;
+}
+
+[data-nav-header] > [data-content="header"] [data-col]:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+[data-nav-header] > [data-content="header"] p{
+    /*Typo:*/
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: white;
+
+    /*Dimensjoner:*/
+    margin-bottom: .75em;
 }
 
 [data-nav-header] ul{
@@ -655,7 +833,7 @@ ikea-logo{
 
 [data-nav-header] ul li:not(:last-child){
     /* Posisjon: */
-    margin-bottom: 2rem;
+    margin-bottom: .5em;
 }
 
 [data-nav-header] a{
@@ -665,9 +843,51 @@ ikea-logo{
     /*Typo:*/
     font-size: 1.3rem;
     font-weight: 600;
-    letter-spacing: .05em;
+    /*letter-spacing: .05em;*/
+    /*text-transform: uppercase;*/
+    color: white;
+}
+[data-nav-header] a:hover{
+    color: var(--ikea-gul);
+}
+
+ikea-nav-button{
+    /*Visning:*/
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    overflow: hidden;
+    border-radius: .5rem;
+
+    /*Typo:*/
+    font-family: var(--default-font);
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1em;
     text-transform: uppercase;
     color: white;
+
+    /*Dimensjoner:*/
+    padding: .5em .75em;
+
+    /*Bakgrunn:*/
+    background-color: var(--ikea-blå);
+
+}
+
+ikea-nav-button::before{
+    font-family: "Material Icons";
+    font-size: 1.3em;
+    content: attr(data-icon);
+    color: inherit;
+
+    margin-right: .4em;
+}
+
+ikea-nav-button:hover{
+    color: var(--ikea-gul);
 }
 
 /*
@@ -716,7 +936,7 @@ section{
 
 main section{
     /* Posisjon: */
-    padding: var(--section-vc-margin) 0;
+    padding: var(--section-vc-padding) 0;
 }
 
 section > img,
@@ -820,15 +1040,48 @@ footer li{
     color: white;
 }
 
-footer section:last-child{
+ikea-logo[data-logo="footer"]{
+    /*Code if needed*/
+}
+
+footer section:not(:last-child) [data-col]{
+    /*Dimensjoner:*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer [data-footer="main"]{
+    /*Dimensjoner:*/
+    padding: var(--footer-vc-padding) 0;
+
+    /*Typo:*/
+    font-size: 1.2rem;
+}
+
+footer [data-footer="creds"]{
     /* Visning: */
     display: flex;
 
     /* Dimensjoner: */
     height: var(--nav-height);
 
+    /*Typo:*/
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    word-spacing: .2em;
+    text-transform: uppercase;
+
     /* Bakgrunn: */
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer [data-footer="creds"] p{
+    color: rgba(255,255,255,0.5);
 }
 
 footer section:last-child [data-col]{
@@ -837,6 +1090,9 @@ footer section:last-child [data-col]{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    /*Dimensjoner:*/
+    height: 100%;
 }
 
 /*

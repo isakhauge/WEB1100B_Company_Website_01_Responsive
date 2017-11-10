@@ -10,13 +10,24 @@ VARIABLES: START
     --default-p-line-height: 1.5em;
 
     /* Heading 1 */
-    --default-h1-size: 3.5rem;
+    --default-h1-size: 4rem;
+    --default-h1-weight: 900;
+    --default-h1-line-height: 1.3em;
 
     /* Heading 2 */
     --default-h2-size: 3rem;
+    --default-h2-weight: 500;
+    --default-h2-line-height: 1.3em;
 
     /* Heading 3 */
     --default-h3-size: 2.5rem;
+    --default-h3-weight: 700;
+    --default-h3-line-height: 1.3em;
+
+    /* Heading 4 */
+    --default-h4-size: 2rem;
+    --default-h4-weight: 700;
+    --default-h4-line-height: 1.3em;
 }
 /*
 VARIABLES: END
@@ -152,36 +163,36 @@ main [data-content] a ~ img{margin-top: 2rem;}
 main h1{
     /* Typo: */
     font-size: var(--default-h1-size);
-    font-weight: 900;
-    line-height: 1.3em;
+    font-weight: var(--default-h1-weight);
+    line-height: var(--default-h1-line-height);
 }
 
 main h2{
     /* Typo: */
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 1.3em;
+    font-size: var(--default-h2-size);
+    font-weight: var(--default-h2-weight);
+    line-height: var(--default-h2-line-height);
 }
 
 main h3{
     /* Typo: */
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.3em;
+    font-size: var(--default-h3-size);
+    font-weight: var(--default-h3-weight);
+    line-height: var(--default-h3-line-height);
 }
 
 main h4{
     /* Typo: */
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.3em;
+    font-size: var(--default-h4-size);
+    font-weight: var(--default-h4-weight);
+    line-height: var(--default-h4-line-height);
 }
 
 main p{
     /* Typo: */
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.5em;
+    font-size: var(--default-p-size);
+    font-weight: var(--default-p-weight);
+    line-height: var(--default-p-line-height);
     text-align: justify;
 }
 

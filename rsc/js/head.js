@@ -5,6 +5,9 @@ document.write(
     '<meta http-equiv="X-UA-Compatible" content="ie=edge">' +
     '<!-- Generell metadata: Slutt -->' +
 
+    '<!-- jQuery import: Start -->' +
+    // '<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>' +
+    '<!-- jQuery import: End -->' +
 
     '<!-- CSS import: Start -->' +
     '<link rel="stylesheet" type="text/css" href="rsc/css/main.css">' +
@@ -23,13 +26,10 @@ document.write(
     '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">' +
     '<!-- Google Fonts: Slutt -->' +
 
-    '<!-- jQuery import: Start -->' +
-    '<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>' +
-    '<!-- jQuery import: End -->' +
-
     '<!-- JS import: Start -->' +
     '<script src="rsc/js/custom_dom.js"></script>' +
     '<script src="rsc/js/functions.js"></script>' +
+    '<script src="rsc/js/smooth_scroll.js"></script>' +
     '<!-- JS import: End -->'
 
 );

@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 1000px){
     
-    main [data-content], footer [data-content]{
+    main [data-content], footer [data-content], [data-nav-header] [data-content]{
         flex-direction: row;
     }
 
@@ -64,7 +64,7 @@
     
 @media screen and (max-width: 999px){
     
-    main [data-content], footer [data-content]{
+    main [data-content], footer [data-content], [data-nav-header] [data-content]{
         flex-direction: column;
     }
 

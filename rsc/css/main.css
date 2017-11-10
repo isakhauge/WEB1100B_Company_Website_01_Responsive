@@ -1065,6 +1065,8 @@ footer [data-footer="main"]{
 footer [data-footer="creds"]{
     /* Visning: */
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     /* Dimensjoner: */
     height: var(--nav-height);
@@ -1082,6 +1084,7 @@ footer [data-footer="creds"]{
 
 footer [data-footer="creds"] p{
     color: rgba(255,255,255,0.5);
+    text-align: center;
 }
 
 footer section:last-child [data-col]{

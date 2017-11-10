@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="76661a9a-b3bd-4b13-882c-e4af2a178ec6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rsc/js/head.js" afterPath="$PROJECT_DIR$/rsc/js/head.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kontakt.html" afterPath="$PROJECT_DIR$/kontakt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omoss.html" afterPath="$PROJECT_DIR$/omoss.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/produkt.html" afterPath="$PROJECT_DIR$/produkt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rsc/css/main.css" afterPath="$PROJECT_DIR$/rsc/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rsc/js/footer.js" afterPath="$PROJECT_DIR$/rsc/js/footer.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +29,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+                <state relative-caret-position="85">
+                  <caret line="5" column="150" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="159" />
                   <folding>
                     <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -44,6 +48,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="footer.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/rsc/js/footer.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="59" selection-end-column="53" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -51,8 +65,8 @@
           <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/rsc/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
-                  <caret line="767" column="21" lean-forward="true" selection-start-line="767" selection-start-column="21" selection-end-line="767" selection-end-column="21" />
+                <state relative-caret-position="496">
+                  <caret line="1086" column="22" lean-forward="false" selection-start-line="1086" selection-start-column="22" selection-end-line="1086" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -104,15 +118,18 @@
         <option value="$PROJECT_DIR$/doc_standards.md" />
         <option value="$PROJECT_DIR$/kontaktoss.html" />
         <option value="$PROJECT_DIR$/rsc/js/header.js" />
-        <option value="$PROJECT_DIR$/rsc/js/footer.js" />
         <option value="$PROJECT_DIR$/rsc/css/mobile.css" />
         <option value="$PROJECT_DIR$/rsc/css/typo.css" />
         <option value="$PROJECT_DIR$/rsc/js/custom_dom.js" />
         <option value="$PROJECT_DIR$/rsc/js/smooth_scroll.js" />
         <option value="$PROJECT_DIR$/rsc/js/functions.js" />
-        <option value="$PROJECT_DIR$/rsc/css/main.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/rsc/js/head.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/rsc/js/footer.js" />
+        <option value="$PROJECT_DIR$/rsc/css/main.css" />
+        <option value="$PROJECT_DIR$/kontakt.html" />
+        <option value="$PROJECT_DIR$/omoss.html" />
+        <option value="$PROJECT_DIR$/produkt.html" />
       </list>
     </option>
   </component>
@@ -231,7 +248,7 @@
       <workItem from="1510252242358" duration="634000" />
       <workItem from="1510320760665" duration="20398000" />
       <workItem from="1510348995658" duration="5507000" />
-      <workItem from="1510355583177" duration="184000" />
+      <workItem from="1510355583177" duration="530000" />
     </task>
     <task id="LOCAL-00001" summary="Fikset px til rem.">
       <created>1510086285057</created>
@@ -300,7 +317,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60097000" />
+    <option name="totallyTimeSpent" value="60443000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,24 +420,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsc/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
@@ -724,13 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/produkt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rsc/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -750,22 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsc/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="767" column="21" lean-forward="true" selection-start-line="767" selection-start-column="21" selection-end-line="767" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsc/js/footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,10 +781,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rsc/js/footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="59" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsc/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="1086" column="22" lean-forward="false" selection-start-line="1086" selection-start-column="22" selection-end-line="1086" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kontakt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="159" lean-forward="false" selection-start-line="5" selection-start-column="159" selection-end-line="5" selection-end-column="159" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omoss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="159" lean-forward="false" selection-start-line="5" selection-start-column="159" selection-end-line="5" selection-end-column="159" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produkt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="159" lean-forward="false" selection-start-line="4" selection-start-column="159" selection-end-line="4" selection-end-column="159" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="85">
+          <caret line="5" column="150" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="159" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

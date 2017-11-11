@@ -69,9 +69,28 @@ function ikea_logo () {
 #################################################################################
 */
 
-function menu() {
-    $("[data-nav-header]").toggle();
-}
+    function menu() {
+
+        var data_nav_header;
+
+        data_nav_header = document.querySelector("[data-nav-header]");
+
+
+        if (data_nav_header.classList.contains("menu_close") === true) {
+
+            data_nav_header.classList.remove("menu_close");
+            data_nav_header.classList.add("menu_open");
+
+        }
+
+        else {
+
+            data_nav_header.classList.remove("menu_open");
+            data_nav_header.classList.add("menu_close");
+
+        }
+
+    }
 
 /*
 #################################################################################

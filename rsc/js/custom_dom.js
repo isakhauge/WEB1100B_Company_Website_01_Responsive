@@ -1,9 +1,22 @@
 // Custom logo DOM element:
-window.customElements = undefined;
-window.customElements.define("ikea-logo");
-window.customElements.define("ikea-nav-button");
-window.customElements.define("ikea-infobox");
-window.customElements.define("ikea-infobox-icon");
-window.customElements.define("ikea-infobox-title");
-window.customElements.define("ikea-infobox-text");
-window.customElements.define("ikea-scroll-down");
+
+class IkeaLogo extends HTMLElement {};
+window.customElements.define("ikea-logo", IkeaLogo);
+
+class IkeaNavButton extends HTMLElement {};
+window.customElements.define("ikea-nav-button", IkeaNavButton);
+
+class IkeaInfoBox extends HTMLElement {};
+window.customElements.define("ikea-infobox", IkeaInfoBox);
+
+class IkeaInfoBoxIcon extends HTMLElement {};
+window.customElements.define("ikea-infobox-icon", IkeaInfoBoxIcon);
+
+class IkeaInfoBoxTitle extends HTMLElement {};
+window.customElements.define("ikea-infobox-title", IkeaInfoBoxTitle);
+
+class IkeaInfoBoxText extends HTMLElement {};
+window.customElements.define("ikea-infobox-text", IkeaInfoBoxText);
+
+class IkeaScrollDown extends HTMLElement {};
+window.customElements.define("ikea-scroll-down", IkeaScrollDown);

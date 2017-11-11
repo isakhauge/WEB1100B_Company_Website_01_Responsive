@@ -521,7 +521,7 @@ ikea-infobox > ikea-infobox-text{
 
     /*Posisjon:*/
     position: absolute;
-    top: calc( 100vh - ( var(--nav-height) ) - 1rem );
+    bottom: 1rem;
     left: calc(50% - ( 6rem / 2 ) );
 
     /*Bakgrunn:*/
@@ -762,7 +762,7 @@ ikea-logo{
 
 [data-nav-header]{
     /* Visning: */
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
@@ -788,6 +788,29 @@ ikea-logo{
     /*Anim:*/
 }
 
+.menu_close{
+    opacity: 0;
+    -webkit-transform: translateY(-100vh);
+    -moz-transform: translateY(-100vh);
+    -ms-transform: translateY(-100vh);
+    -o-transform: translateY(-100vh);
+    transform: translateY(-100vh);
+    transition-property: opacity, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu_open{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    transition-property: opacity, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
 
 [data-nav-header] > [data-content="header"]{
     /*Visning:*/
@@ -880,14 +903,18 @@ ikea-nav-button{
 ikea-nav-button::before{
     font-family: "Material Icons";
     font-size: 1.3em;
-    content: attr(data-icon);
-    color: inherit;
+    content: "\E5D2";
+    color: inherit !important;
 
     margin-right: .4em;
 }
 
 ikea-nav-button:hover{
-    color: var(--ikea-gul);
+    /*Typo:*/
+    color: var(--ikea-gul) !important;
+
+    /*Effekter:*/
+    box-shadow: 0 0 .5rem rgba(0,0,0,0.5);
 }
 
 /*

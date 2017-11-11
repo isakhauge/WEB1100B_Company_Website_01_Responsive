@@ -6,7 +6,7 @@ document.write(
 
     '<ikea-nav-button data-icon="&#xE5D2;" onclick="menu()">Meny</ikea-nav-button>' +
 
-    '<nav data-nav-header>' +
+    '<nav data-nav-header class="menu_close">' +
 
         '<div data-content="header">' +
 

@@ -68,6 +68,20 @@
         flex-direction: column;
     }
 
+    html, body{
+        font-size: 8px;
+    }
+
+    body main section h1{font-size: 3.5rem;}
+    body main section h2{font-size: 2.5rem;}
+    body main section h3{font-size: 2rem;}
+    body main section h4{font-size: 1.5rem;}
+    body main section p{font-size: 1.2rem;}
+
+    body main section [data-button="large"]{font-size: 1.8rem;}
+
+    body header ikea-nav-button{font-size: 1.9rem;}
+
     /* [data-col="1"]{width: 100%;}
     [data-col="2"]{width: 100%;}
     [data-col="3"]{width: 100%;} */

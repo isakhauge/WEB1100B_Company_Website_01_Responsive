@@ -521,7 +521,7 @@ ikea-infobox > ikea-infobox-text{
 
     /*Posisjon:*/
     position: absolute;
-    bottom: var(--nav-height);
+    top: calc( 100vh - ( var(--nav-height) ) - 1rem );
     left: calc(50% - ( 6rem / 2 ) );
 
     /*Bakgrunn:*/
@@ -769,7 +769,7 @@ ikea-logo{
     border-radius: 0 0 1rem 1rem;
 
     /* Dimensjoner: */
-    height: 50vh;
+    /*height: 50vh;*/
     width: 100%;
 
     /* Posisjon: */
@@ -804,7 +804,7 @@ ikea-logo{
     position: relative;
 }
 
-[data-nav-header] > [data-content="header"] [data-col]:not(:last-child){
+[data-nav-header] > [data-content="header"] [data-col]{
     margin-bottom: 3rem;
 }
 

@@ -9,6 +9,8 @@
     --content-max-width: 900px;
     --section-vc-padding: 8rem;
     --content-hz-margin: 3rem;
+    --ikea-logo-width: 10rem;
+    --ikea-logo-aspect-ratio: 0.36;
 
     /* Farger: */
     --ikea-blå: #002B8E;
@@ -230,7 +232,7 @@ hr{
 
     /* Typo: */
     text-decoration: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--ikea-blå);
@@ -254,7 +256,7 @@ hr{
     transition-timing-function: ease-in-out;
 }
 [data-button="small"]{padding: .5em .75em; font-size: 1.2rem;}
-[data-button="large"]{padding: .5em .75em; font-size: 2rem; font-weight: 900;}
+[data-button="large"]{padding: .5em .75em; font-size: 2rem;}
 [data-button-style="ikea-blå"]{color: white; background-color: var(--ikea-blå);}
 
 
@@ -425,7 +427,7 @@ ikea-infobox{
     -ms-user-select: none;
 
     /*Dimensjoner:*/
-    width: 25rem;
+    width: 100%;
     max-width: 25rem;
     border-radius: 1rem;
 
@@ -550,8 +552,8 @@ ikea-infobox > ikea-infobox-text{
     border-radius: 50%;
 
     /*Dimensjoner:*/
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
 
     /*Posisjon:*/
     position: fixed;
@@ -561,19 +563,19 @@ ikea-infobox > ikea-infobox-text{
     /*Bakgrunn:*/
     background-image: url("../img/ui/arrow_up.svg");
     background-repeat: no-repeat;
-    background-size: 2rem;
+    background-size: 3rem;
     background-position: center;
     background-color: white;
 
     /*Effekter:*/
-    box-shadow: var(--button-default-shadow);
+    box-shadow: 0 0 3rem rgba(0,0,0,0.2);
     transform: var(--button-default-anim);
     transition-property: box-shadow, transform;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
 }
 [data-scroll-up]:hover{
-    box-shadow: var(--button-hover-shadow);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
     transform: var(--button-hover-anim);
     transition-property: box-shadow, transform;
     transition-duration: .2s;
@@ -746,8 +748,8 @@ ikea-logo{
     cursor: pointer;
 
     /* Dimensjoner: */
-    width: 10rem;
-    height: 4rem;
+    width: var(--ikea-logo-width);
+    height: calc( (var(--ikea-logo-width)) * (var(--ikea-logo-aspect-ratio)) );
 
     /* Posisjon: */
     position: relative;
@@ -759,6 +761,15 @@ ikea-logo{
     background-position: left;
     /*background-color: red;*/
 }
+[data-logo-width="100"]{width: calc(((var(--ikea-logo-width)) * 1));height: calc(((var(--ikea-logo-width)) * 1) * (var(--ikea-logo-aspect-ratio)));}
+[data-logo-width="150"]{width: calc(((var(--ikea-logo-width)) * 1.5));height: calc(((var(--ikea-logo-width)) * 1.5) * (var(--ikea-logo-aspect-ratio)));}
+[data-logo-width="200"]{width: calc(((var(--ikea-logo-width)) * 2));height: calc(((var(--ikea-logo-width)) * 2) * (var(--ikea-logo-aspect-ratio)));}
+[data-logo-width="250"]{width: calc(((var(--ikea-logo-width)) * 2.5));height: calc(((var(--ikea-logo-width)) * 2.5) * (var(--ikea-logo-aspect-ratio)));}
+[data-logo-width="300"]{width: calc(((var(--ikea-logo-width)) * 3));height: calc(((var(--ikea-logo-width)) * 3) * (var(--ikea-logo-aspect-ratio)));}
+[data-logo-width="350"]{width: calc(((var(--ikea-logo-width)) * 3.5));height: calc(((var(--ikea-logo-width)) * 3.5) * (var(--ikea-logo-aspect-ratio)));}
+[data-logo-width="400"]{width: calc(((var(--ikea-logo-width)) * 4));height: calc(((var(--ikea-logo-width)) * 4) * (var(--ikea-logo-aspect-ratio)));}
+[data-logo-width="450"]{width: calc(((var(--ikea-logo-width)) * 4.5));height: calc(((var(--ikea-logo-width)) * 4.5) * (var(--ikea-logo-aspect-ratio)));}
+[data-logo-width="500"]{width: calc(((var(--ikea-logo-width)) * 5));height: calc(((var(--ikea-logo-width)) * 5) * (var(--ikea-logo-aspect-ratio)));}
 
 [data-nav-header]{
     /* Visning: */
@@ -777,10 +788,11 @@ ikea-logo{
     left: 0;
     margin: 0;
     margin-top: var(--nav-height);
+    padding: var(--nav-height) 0;
     position: fixed;
 
     /* Bakgrunn: */
-    background-color: rgba(0, 43, 142, 0.9);
+    background-color: rgba(0, 43, 142, 0.95);
 
     /*Effekter:*/
     box-shadow: 0 1rem 4rem rgba(0,0,0,0.5);
@@ -823,11 +835,10 @@ ikea-logo{
 
     /*Posisjon:*/
     margin: 0 auto;
-    margin-top: calc( var(--nav-height) * 0.5);
     position: relative;
 }
 
-[data-nav-header] > [data-content="header"] [data-col]{
+[data-nav-header] > [data-content="header"] [data-col]:not(:last-child){
     margin-bottom: 3rem;
 }
 
@@ -882,7 +893,7 @@ ikea-nav-button{
     -moz-user-select: none;
     -ms-user-select: none;
     overflow: hidden;
-    border-radius: .5rem;
+    border-radius: .6em;
 
     /*Typo:*/
     font-family: var(--default-font);
@@ -905,6 +916,7 @@ ikea-nav-button::before{
     font-size: 1.3em;
     content: "\E5D2";
     color: inherit !important;
+    font-weight: 400 !important;
 
     margin-right: .4em;
 }
@@ -1065,10 +1077,6 @@ footer a,
 footer ul,
 footer li{
     color: white;
-}
-
-ikea-logo[data-logo="footer"]{
-    /*Code if needed*/
 }
 
 footer section:not(:last-child) [data-col]{

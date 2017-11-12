@@ -15,10 +15,10 @@ document.write(
     '<link rel="stylesheet" type="text/css" href="rsc/css/mobile.css">' +
     '<link rel="stylesheet" type="text/css" href="rsc/css/material-icons.css">' +
 
-    '<link rel="stylesheet" type="text/css" href="rsc/css/pages/index.css">' +
-    '<link rel="stylesheet" type="text/css" href="rsc/css/pages/omoss.css">' +
-    '<link rel="stylesheet" type="text/css" href="rsc/css/pages/produkt.css">' +
-    '<link rel="stylesheet" type="text/css" href="rsc/css/pages/kontakt.css">' +
+    '<link rel="stylesheet" type="text/css" href="rsc/css/pages_temp_disabeled/index.css">' +
+    '<link rel="stylesheet" type="text/css" href="rsc/css/pages_temp_disabeled/omoss.css">' +
+    '<link rel="stylesheet" type="text/css" href="rsc/css/pages_temp_disabeled/produkt.css">' +
+    '<link rel="stylesheet" type="text/css" href="rsc/css/pages_temp_disabeled/kontakt.css">' +
     '<!-- CSS import: Slutt -->' +
 
     '<!-- Google Fonts: Start -->' +

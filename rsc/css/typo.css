@@ -37,6 +37,7 @@ VARIABLES: END
 html, body{
     font-size: 10px;
     font-family: var(--default-font);
+    color: #333347;
 }
 
 *{

@@ -71,10 +71,11 @@ function ikea_logo () {
 
     function menu() {
 
+        var ikea_nav_button;
         var data_nav_header;
 
+        ikea_nav_button = document.getElementsByTagName('ikea-nav-button');
         data_nav_header = document.querySelector("[data-nav-header]");
-
 
         if (data_nav_header.classList.contains("menu_close") === true) {
 

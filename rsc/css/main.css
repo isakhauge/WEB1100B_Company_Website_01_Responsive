@@ -842,15 +842,15 @@ ikea-logo{
     margin-bottom: 3rem;
 }
 
-[data-nav-header] > [data-content="header"] p{
-    /*Typo:*/
-    font-size: 1.6rem;
-    font-weight: 900;
-    color: white;
+/*[data-nav-header] > [data-content="header"] p{*/
+    /*!*Typo:*!*/
+    /*font-size: 1.6rem;*/
+    /*font-weight: 900;*/
+    /*color: white;*/
 
-    /*Dimensjoner:*/
-    margin-bottom: .75em;
-}
+    /*!*Dimensjoner:*!*/
+    /*margin-bottom: .75em;*/
+/*}*/
 
 [data-nav-header] ul{
     /* Visning: */
@@ -870,12 +870,17 @@ ikea-logo{
     margin-bottom: .5em;
 }
 
+[data-nav-header] ul p{
+    /*Typo:*/
+    font-size: 2em;
+}
+
 [data-nav-header] a{
     /* Visning: */
     text-decoration: none;
 
     /*Typo:*/
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: 600;
     /*letter-spacing: .05em;*/
     /*text-transform: uppercase;*/
@@ -1086,7 +1091,18 @@ footer section:not(:last-child) [data-col]{
 }
 
 footer ul{
+    /*Visning:*/
     list-style-type: none;
+}
+
+footer ul li:not(:last-child){
+    /* Posisjon: */
+    margin-bottom: .25em;
+}
+
+footer ul:not(:last-child){
+    /* Posisjon: */
+    margin-bottom: 2rem;
 }
 
 footer [data-footer="main"]{

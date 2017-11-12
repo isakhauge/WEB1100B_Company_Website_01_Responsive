@@ -28,6 +28,14 @@ VARIABLES: START
     --default-h4-size: 2rem;
     --default-h4-weight: 700;
     --default-h4-line-height: 1.3em;
+
+    /* Small: */
+    --default-small-size: 1rem;
+
+    /* Blockquote: */
+    --default-bq-size: 1.8rem;
+    --default-bq-weight: 400;
+    --default-bq-line-height: 1.5em;
 }
 /*
 VARIABLES: END
@@ -197,6 +205,14 @@ main p{
     text-align: justify;
 }
 
+main blockquote{
+    /* Typo: */
+    font-size: var(--default-bq-size);
+    font-weight: var(--default-bq-weight);
+    line-height: var(--default-bq-line-height);
+    text-align: justify;
+}
+
 main ul{
     margin-left: 2rem;
 }
@@ -229,4 +245,15 @@ main table tr:not(:first-child) td{
     /* Typo: */
     font-size: var(--default-p-size);
     font-weight: var(--default-p-weight);
+}
+
+header ul, header p, header a,
+footer ul, footer p, footer a{
+    font-size: var(--default-small-size);
+}
+
+ul > p{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: .5em;
 }
